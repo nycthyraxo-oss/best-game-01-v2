@@ -1,5 +1,9 @@
 # Nova Harvest
 
+[![make.fun · best-game-01](https://make.fun/badge/best-game-01.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![rank](https://make.fun/badge/best-game-01/nycthyraxo-oss/best-game-01-v2/rank.svg)](https://make.fun/bounty/best-game-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![reward](https://make.fun/badge/best-game-01/nycthyraxo-oss/best-game-01-v2/reward.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+
 A complete, original twin-stick arena shooter for the web, built for the
 make.fun **best-game-01** bounty ("Make the best game").
 
@@ -53,7 +57,7 @@ with the Web Audio API.
 - `game/src/painter.js` — all drawing: nebula backdrop, HUD, upgrade draft, screens.
 - `game/src/sound.js` — synthesised sound effects.
 - `game/src/controls.js` — keyboard + mouse.
-- `game/src/scenes.js` — the staged screenshot scenes (`?shot=title|play|win|over`).
+- `game/src/scenes.js` — the staged screenshot scenes (`?shot=title|play|win|over|action`).
 - `main.ts` — the make.fun entrypoint: copies `game/` and `screenshots/`
   to `/output` and writes `dossier.json` with the vendored library.
 - `vendor/makefun-game.ts` — the kit's dossier library, unchanged.
@@ -64,8 +68,8 @@ with the Web Audio API.
 
 Taken headless in desktop Chrome from the game's own code:
 
-1. `1-title.jpg` — title screen (`?shot=title&seed=7`)
-2. `2-play.jpg` — the upgrade draft after clearing wave 1 (`?shot=play&seed=7`)
+1. `1-action.jpg` — wave-5 boss fight, the busiest action shot with the full HUD (`?shot=action&seed=7`)
+2. `2-title.jpg` — title screen (`?shot=title&seed=7`)
 3. `3-win.jpg` — victory screen after clearing wave 10 (`?shot=win&seed=7`)
 4. `4-over.jpg` — game-over screen (`?shot=over&seed=7`)
 
